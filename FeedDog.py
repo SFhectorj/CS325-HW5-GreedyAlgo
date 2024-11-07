@@ -5,6 +5,11 @@ def feedDog(hunger_level, biscuit_size):
     This function contains a greedy algorithm that is used to match biscuits to the appropriate
     hunger level of a dog. The function will return the total number of dogs that can be satisfied.
     """
+    # Part 1: sorting
+    hunger_level.sort()
+    biscuit_size.sort()
+    
+
     total_dogs_satisfied = 0
 
     return total_dogs_satisfied
