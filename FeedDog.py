@@ -18,7 +18,13 @@ def feedDog(hunger_level, biscuit_size):
     biscuit_pointer = 0
 
     # Match each dog with a biscuit
-    while hunger_pointer < len(hunger_level) and biscuit_pointer < (biscuit_size):
-
-
+    while hunger_pointer < len(hunger_level) and biscuit_pointer < len(biscuit_size):
+        # Biscuit satisfies
+        if biscuit_size[biscuit_pointer] >= hunger_level[hunger_level]:
+            # Dog is satisfied
+            total_dogs_satisfied += 1
+            # move on
+            hunger_pointer += 1
+        # biscuit pointer is updated in any scenario
+        biscuit_pointer += 1
     return total_dogs_satisfied
